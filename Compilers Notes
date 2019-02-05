@@ -148,6 +148,23 @@ Fscanf(fp, "%s", data)  //fp is file pointer either from the file or the keyboar
 
 Monday 2/4
 
+reviewed basic introductions to languages
+
+semantics - process data by the rules and assignment by rules
+
+programming languages evolved with restrictions.  natural lanaguages did not
+4 categories of laguages
+
+type 3 -> regular, linear expressions: algorithms
+type 2 -> context free: BNF
+type 1 -> difficult to write algorithms, static semantics
+type 0 -> turing machines, algorithm that cannot be built.  won't write languages for this level
+
+
+type 2 and 3 is where we write programming languages
+compontents of languages written in type 2 and then others considered case-by-case
+
+https://drona.csa.iisc.ac.in/~deepakd/atc-2013/seminars/presentation_1.pdf
 
 
 
