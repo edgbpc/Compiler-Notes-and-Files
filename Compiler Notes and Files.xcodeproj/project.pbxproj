@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C3BF76552209244800FBF7D5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF76542209244800FBF7D5 /* main.cpp */; };
+		C3BF76622209247100FBF7D5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3BF765F2209247100FBF7D5 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,13 @@
 /* Begin PBXFileReference section */
 		C3BF76512209244800FBF7D5 /* Compiler Notes and Files */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Compiler Notes and Files"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BF76542209244800FBF7D5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C3BF765B2209247100FBF7D5 /* P0 notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "P0 notes.md"; sourceTree = SOURCE_ROOT; };
+		C3BF765C2209247100FBF7D5 /* ProgrammingStandards.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ProgrammingStandards.pdf; sourceTree = SOURCE_ROOT; };
+		C3BF765D2209247100FBF7D5 /* Eric Goodwin CS4280 HW1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Eric Goodwin CS4280 HW1.pdf"; sourceTree = SOURCE_ROOT; };
+		C3BF765E2209247100FBF7D5 /* Intro2Languages.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Intro2Languages.pdf; sourceTree = SOURCE_ROOT; };
+		C3BF765F2209247100FBF7D5 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		C3BF76602209247100FBF7D5 /* ProgArch.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ProgArch.pdf; sourceTree = SOURCE_ROOT; };
+		C3BF76612209247100FBF7D5 /* Compilers Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Compilers Notes"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,13 @@
 		C3BF76532209244800FBF7D5 /* Compiler Notes and Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3BF76612209247100FBF7D5 /* Compilers Notes */,
+				C3BF765D2209247100FBF7D5 /* Eric Goodwin CS4280 HW1.pdf */,
+				C3BF765E2209247100FBF7D5 /* Intro2Languages.pdf */,
+				C3BF765F2209247100FBF7D5 /* main.cpp */,
+				C3BF765B2209247100FBF7D5 /* P0 notes.md */,
+				C3BF76602209247100FBF7D5 /* ProgArch.pdf */,
+				C3BF765C2209247100FBF7D5 /* ProgrammingStandards.pdf */,
 				C3BF76542209244800FBF7D5 /* main.cpp */,
 			);
 			path = "Compiler Notes and Files";
@@ -118,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3BF76622209247100FBF7D5 /* main.cpp in Sources */,
 				C3BF76552209244800FBF7D5 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
