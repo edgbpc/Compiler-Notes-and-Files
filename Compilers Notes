@@ -166,6 +166,85 @@ compontents of languages written in type 2 and then others considered case-by-ca
 
 https://drona.csa.iisc.ac.in/~deepakd/atc-2013/seminars/presentation_1.pdf
 
+Wednesday 2/6
+
+first C++ compilers compiled to C then to machine code
+
+languaged must be precisely defined and unambigous
+should be able to look at code and tell if it will run or not
+high level languages give portability (multiple machines - mostly)
+
+languages, more seperated -
+syntax - what is proper structure
+semantics - what's the expression mean
+
+Syntax -
+start with alphabet - set of valid characters
+grammar - rules for generating/recongizing valid strings of the language (tokens)
+
+there are restrictions
+
+ex . in C must have (..) after an if
+
+trivial ex - L1 = 01* // every string in lanaguage must start with 01
+valid strings -- 0111, 01, 01101 but not 10
+
+tokens can be keywords, symbols, letters, operators, etc
+
+diff in type 1 and type 2 categories -
+natural languages are context sensitive (leads to ambigouty)
+programing languages are context free
+
+bindings -
+
+global x
+local x
+
+x = 5
+which x?  depends on if dynamic or static scoping
+if static scoping - we know which x is assigned 5, compiler can too
+if dynamic - can't answer
+
+static -> compilation time
+dynamic -> runtime
+
+variables have attributes that have to be assigned. if done at runtime or compiler, depends on language
+    type, name, address, value, lifetime (scope)
+
+ex language
+type 1 -> varialbes
+type 2 -> the parser
+type 3 -> construct keywords
+
+BNF :
+terminals/tokens and non-terminals
+
+tokens: lower case letter or no brackets
+terimanal: upper case or use < >
+
+BNF is a set of productions
+<program> -> program being <variables> <statements> end
+<variables> -> var id; <variables> | e  // <variables> is recursion.  recursion requires a base (e)) e = empty
+<statements> -> <stat>;{<stat>;} //must have at least 1 statement and then repeats any number of times, incuding 0
+...
+<ifStat>-> if <cond><state>{else <stat>}
+ this does not say what program does, only says what is possible
+
+ex -
+program
+    begin
+        var x;
+        statement;
+    end
+
+
+
+Extended BNF -
+added repeats
+{x} - repeat any number of times -- 0, 1 ... times
+[x] - means optional x
+
+
 
 
 
