@@ -80,6 +80,9 @@ assume filename.h
 #endef
 
 
+typess and macros do not exist once the linker starts
+
+
 REVIEW FLOATING POINT REPRESENTATION VS INTEGAR REPRESENTATION
 
 In a 8 bit number, the first 4 of bits of floating point =/= the 4 bits of an integer number
@@ -113,6 +116,7 @@ Print preorder traversal - visit node, process node before traveling left, then 
  3 Ala Ada Jim				3 - child of root, has no children
  5 Susan Georg				5 - child of root, has a child 6
    6 George
+
 
 
 MUST USE FUNCTION NAMES IN ASSIGNMENTS
@@ -244,14 +248,66 @@ added repeats
 {x} - repeat any number of times -- 0, 1 ... times
 [x] - means optional x
 
+Static vs dynmaic linking
+
+static - put all the files together
+Unix/linux - went with idea that size doesn't matter; speed does.  uses static
+
+dynamic -
+Windows - size matters
+dll -- dynmically linked library
 
 
 
+Compiler analyzes source and puts it together to make the target
+
+Machine Indepedent -
+High level languages (C++, etc) - processed indepedently of the machine
+Machine Depedent -
+when the code changed to machine language
 
 
+parser - use BNF to check for syntax errors
+scanner translates from characters to tokens
+BNF  expressed in tokens
+
+Homework review
+
+<for> -> for ( <exp>  ; <exp>  ; <exp>  ) <statement> | for -> ( <exp> ; <exp>  ; <exp> ) <block>
+OR
+<for> -> for ( <exp> ; <exp> ; <exp>  ) <statmentORblock>
+<statmentORblock> -> <statement> | <block>
+
+expressions vs statements
+expressions evaluate and have types
 
 
+regular languages -> smallest subset of categories of languages
 
+L - (101)*(00)*(01)+ or (101)*(00)*01(01)*
+
+infinite # of strings possible
+
+
+inteperters -
+
+allows programs to be built in languages other then the machine language of the computer that is building the program
+
+interperters leads to abstract machines
+run without compliation
+
+write interpter in a high level language that you can compile
+
+IE write and compile in C
+
+java virtual machine -> compiler produces bytecode
+    reason? -- portability at synthesis.  person only needs virtual machine to run
+            -- compete with microsoft
+
+    pascal did this too
+        for reusability
+
+time/space complextity
 
 
 

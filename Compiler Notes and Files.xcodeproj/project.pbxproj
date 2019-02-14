@@ -24,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C3261870221500EB00349201 /* compiler img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compiler img.png"; sourceTree = SOURCE_ROOT; };
 		C3BF76512209244800FBF7D5 /* Compiler Notes and Files */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Compiler Notes and Files"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BF76542209244800FBF7D5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C3BF765B2209247100FBF7D5 /* P0 notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "P0 notes.md"; sourceTree = SOURCE_ROOT; };
@@ -33,6 +34,7 @@
 		C3BF765F2209247100FBF7D5 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
 		C3BF76602209247100FBF7D5 /* ProgArch.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ProgArch.pdf; sourceTree = SOURCE_ROOT; };
 		C3BF76612209247100FBF7D5 /* Compilers Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Compilers Notes"; sourceTree = SOURCE_ROOT; };
+		C3D36091221250F500F8F334 /* CompIntpTrans.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CompIntpTrans.pdf; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +67,9 @@
 		C3BF76532209244800FBF7D5 /* Compiler Notes and Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3261870221500EB00349201 /* compiler img.png */,
 				C3BF76612209247100FBF7D5 /* Compilers Notes */,
+				C3D36091221250F500F8F334 /* CompIntpTrans.pdf */,
 				C3BF765D2209247100FBF7D5 /* Eric Goodwin CS4280 HW1.pdf */,
 				C3BF765E2209247100FBF7D5 /* Intro2Languages.pdf */,
 				C3BF765F2209247100FBF7D5 /* main.cpp */,
