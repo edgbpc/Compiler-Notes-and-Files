@@ -309,5 +309,55 @@ java virtual machine -> compiler produces bytecode
 
 time/space complextity
 
+Quiz 2 review
+
+A block :
+
+{
+    x = 1 ;
+}
+
+{
+    int x;
+    x = 1;
+}
+<block> --> {  <variable><statement> }
+<statement> --> <statement><statements> | <statements>
+
+https://en.wikipedia.org/wiki/Tombstone_diagram
+
+
+Java Model -
+
+Java source -> Compiler -> Bytecode -> Executes in Java Virtual machine
+
+re-write system to not use the JVM in compliation or in execution of final program
+
+run source through the executable of that source to get a new compiler (bootstrapping)
+
+Lexical Analysis (scanner) -> takes characters and turns into tokens
+
+Σ^chars -> Σ^tokens
+
+significant digits -- scanners used to cut off after set number of characters in a identifier declaration
+IE DOS - 6 characters where considered significant.  distanc == distance
+
+token include line number
+
+overloaded tokens - ex in C * could be multiplication or deference.  Scanner can't determine
+
+symbol tables used to be used in compilers but no longer due to scopes
+
+Finite automation - requires memory
+algorithm does not assume infinite memory
+has a starting point, must terminate, have steps
+
+graph representation
+must be labed and directed
+
+  a
+O--->O
+
+
 
 

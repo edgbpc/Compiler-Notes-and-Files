@@ -34,7 +34,8 @@
 		C3BF765F2209247100FBF7D5 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
 		C3BF76602209247100FBF7D5 /* ProgArch.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ProgArch.pdf; sourceTree = SOURCE_ROOT; };
 		C3BF76612209247100FBF7D5 /* Compilers Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Compilers Notes"; sourceTree = SOURCE_ROOT; };
-		C3D36091221250F500F8F334 /* CompIntpTrans.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CompIntpTrans.pdf; sourceTree = SOURCE_ROOT; };
+		C3F047F2221B8B7000B4CAC6 /* LexAnalysis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = LexAnalysis.pdf; sourceTree = SOURCE_ROOT; };
+		C3F047F3221B8E4F00B4CAC6 /* CompIntpTrans.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CompIntpTrans.pdf; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +68,10 @@
 		C3BF76532209244800FBF7D5 /* Compiler Notes and Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3F047F3221B8E4F00B4CAC6 /* CompIntpTrans.pdf */,
+				C3F047F2221B8B7000B4CAC6 /* LexAnalysis.pdf */,
 				C3261870221500EB00349201 /* compiler img.png */,
 				C3BF76612209247100FBF7D5 /* Compilers Notes */,
-				C3D36091221250F500F8F334 /* CompIntpTrans.pdf */,
 				C3BF765D2209247100FBF7D5 /* Eric Goodwin CS4280 HW1.pdf */,
 				C3BF765E2209247100FBF7D5 /* Intro2Languages.pdf */,
 				C3BF765F2209247100FBF7D5 /* main.cpp */,
