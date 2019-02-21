@@ -358,6 +358,52 @@ must be labed and directed
   a
 O--->O
 
+BNF extension lecture
+-- describes the valid syntax ... ex - is semicolon in the right place?
 
+start with what are the tokens
+
+BNF needs
+1) tokens = terminals
+    example tokens -> +, if, while {
+2) non-terminal(s) <  >, uppercase letters.  says what we are defining.  As needed
+    example - <block>
+3) set of prodctions   { ... }     ->
+{ <  >  -> ( Terminal |  < >)* }
+
+BNF is finished with non-terminal is on the left
+
+Example:
+
+
+
+defining a program wiht BNF
+
+<program> -> <globals> <functions>
+<globals> -> int ID;<globals> | int ID; |  ε
+<functions> -> <func><functions>|<func>
+<func> -> int ID (<args>) <block>
+<block> -> { <vars> <stats> }        -----> the answer for the quiz
+<stats> -> <stat><stats> | <stat>   ----->
+<stat> -> <expr>; | <block> | <ctrlStat>
+<expr> ->
+<ctrlStat> ->
+
+
+
+note:
+int is a keyword/token
+in BNF use recursion for repetition
+ID = indentifier
+ ε = empty
+
+--
+
+back to lexical analysis
+
+ID = L (L|D|_)*
+Σ = { L, D, _, WS }
+good: x, n, x23b, y
+bad: 2a, 3x, -x
 
 

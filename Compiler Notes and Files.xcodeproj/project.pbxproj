@@ -25,6 +25,10 @@
 
 /* Begin PBXFileReference section */
 		C3261870221500EB00349201 /* compiler img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compiler img.png"; sourceTree = SOURCE_ROOT; };
+		C34FBC4D221E2E94003A73BD /* bnf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = bnf.pdf; sourceTree = "<group>"; };
+		C34FBC4E221E3D52003A73BD /* HW2 Page1.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HW2 Page1.HEIC"; sourceTree = SOURCE_ROOT; };
+		C34FBC4F221E3D52003A73BD /* H2 page2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "H2 page2.jpg"; sourceTree = SOURCE_ROOT; };
+		C34FBC50221E4028003A73BD /* lexical.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lexical.jpg; sourceTree = SOURCE_ROOT; };
 		C3BF76512209244800FBF7D5 /* Compiler Notes and Files */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Compiler Notes and Files"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BF76542209244800FBF7D5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C3BF765B2209247100FBF7D5 /* P0 notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "P0 notes.md"; sourceTree = SOURCE_ROOT; };
@@ -68,6 +72,10 @@
 		C3BF76532209244800FBF7D5 /* Compiler Notes and Files */ = {
 			isa = PBXGroup;
 			children = (
+				C34FBC50221E4028003A73BD /* lexical.jpg */,
+				C34FBC4E221E3D52003A73BD /* HW2 Page1.HEIC */,
+				C34FBC4F221E3D52003A73BD /* H2 page2.jpg */,
+				C34FBC4D221E2E94003A73BD /* bnf.pdf */,
 				C3F047F3221B8E4F00B4CAC6 /* CompIntpTrans.pdf */,
 				C3F047F2221B8B7000B4CAC6 /* LexAnalysis.pdf */,
 				C3261870221500EB00349201 /* compiler img.png */,
