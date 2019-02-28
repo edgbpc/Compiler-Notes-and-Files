@@ -25,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		C3261870221500EB00349201 /* compiler img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compiler img.png"; sourceTree = SOURCE_ROOT; };
+		C3290C6422276E870094A1A8 /* lexical and tombstone.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lexical and tombstone.HEIC"; sourceTree = SOURCE_ROOT; };
 		C34FBC4D221E2E94003A73BD /* bnf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = bnf.pdf; sourceTree = "<group>"; };
 		C34FBC4E221E3D52003A73BD /* HW2 Page1.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HW2 Page1.HEIC"; sourceTree = SOURCE_ROOT; };
 		C34FBC4F221E3D52003A73BD /* H2 page2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "H2 page2.jpg"; sourceTree = SOURCE_ROOT; };
@@ -72,6 +73,7 @@
 		C3BF76532209244800FBF7D5 /* Compiler Notes and Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3290C6422276E870094A1A8 /* lexical and tombstone.HEIC */,
 				C34FBC50221E4028003A73BD /* lexical.jpg */,
 				C34FBC4E221E3D52003A73BD /* HW2 Page1.HEIC */,
 				C34FBC4F221E3D52003A73BD /* H2 page2.jpg */,

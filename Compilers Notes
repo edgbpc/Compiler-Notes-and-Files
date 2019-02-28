@@ -406,4 +406,78 @@ ID = L (L|D|_)*
 good: x, n, x23b, y
 bad: 2a, 3x, -x
 
+Type 1 -  able to use regular expressions to define tokens
+
+Type 2 - graph
+    need states
+
+ID = L(L|D|_)*
+Σ = { L, D, _, WS }
+
+how to modify to say ID must have at least length 2
+
+always go from state to another state
+need new state to count letters
+
+state (loop on WS) --- L --> state --- L\D\_--- L ---> state --- WS ---> Final State
+
+Nondeterminism
+    do not have enough information to make a decision
+    in computer science, if you don't have enough information, have to account of multiple situations
+
+finite automata can be deterministic or non-determinisitic
+
+
+in a graph, unlabel is a jump to another state
+
+non-determistic -> allows for more options (more powerful?)
+can convert any any non-deterministic to deterministic (so not more powerful?)
+
+https://www.tutorialspoint.com/automata_theory/ndfa_to_dfa_conversion.htm
+
+Look ahead required when spaces allowed -> more discussion to follow on lookahead
+
+generally keywords are reserved and look like identifers
+
+token in three parts:
+
+[Tk?|Which|Line#]
+
+scanner -> reads words and gives tokens
+
+using regular expressions/regular languages = fine automata
+
+getting started on scanner-
+design directional graph
+graph traversals
+
+graph  as an array representation
+2d array
+
+                Alphabet = {L D _ >= WS}  - every letter, digit, _, >, +, >=, , tab
+               L   D    _   >    =    WS
+            ---------------------------------
+       s1 |   s3 | s5 | E | s2 | E  |  s1
+       s2 |  fs> |fs> |fs>|fs> |s4  | fs>
+       s3 |  s3  | s3 |s3 |fsID|fsID| fsID
+       s4 |
+       s5 |
+          |
+          |
+          |
+          |
+nodes     |
+(states)
+                E = error
+
+        create 2D array with some kind of base type
+        ie double A[5] -> array of 5 doubles
+        state tells you what row to go to.  s3 = row 2.. IE int 2 errors represented as negatives
+        or array of structures
+        finals states ints > 1000
+
+drive code -
+implemment
+loop until error or final state
+3 options - keep lookng, error, or final state
 
