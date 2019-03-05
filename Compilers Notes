@@ -481,3 +481,104 @@ implemment
 loop until error or final state
 3 options - keep lookng, error, or final state
 
+BNF Quiz Clarifications:
+BNF must common problems
+Functions and then more functions
+WRONG - <functions> -> <type>ID(...){...}}
+doesn't support multiple functions
+
+Most Common Mistakes:
+__________
+|M      N| -> no such thing as compilers for 1 machine language to another machine language
+---   ----
+   |C|
+   ---     -> but the quiz question was on compilers not interrupters
+
+  ____
+  |M |  -> interrupter
+  |N |
+  ----
+ ______
+(prog  )   -> don't write program source in machine
+ | M  |
+ ------
+
+input source and output source always the same
+applies for when writing a compiler and getting a new computer
+
+
+Back to lexical analysis --
+Σchar ->Σtoken
+(char)+ -> 1 token  --> at least 1 character into a token
+
+P1 suggestions
+main.c
+---------
+| same code as P0
+|
+|
+|
+| //testscanner()
+|
+
+scanner.c
+-----------
+| scanner() {..}
+|
+| //other helpers
+|
+|
+|
+
+testScanner.c
+---------
+|
+|
+| testscanner() {
+| //loop until EOFtk
+| //scanner()
+| //print Tk (for testing)
+| }
+
+Scanner Suggesstion
+
+file.sp19 -------> SCANNER  -------> Token
+   read characters 1 at a time
+
+
+file.sp19 ->  FILTER 1 --> SCANNER FA  -> FILTER 2 ----> Token
+
+helpers:
+
+filter: gets data, keeps some, discards some, maybe make small changes
+Filter 1: Take out comments, count lines, map characters to column
+Filter 2: Pass  non-identifers through, compare identifers to list of keywords and
+report keywords if match, otherwise pass idenitifer
+
+CFGParsing
+static semantics -- BNF cannot express
+   Type 2 - Context Free Grammer (BNF)
+    generic way of describing a language
+    tokens (words)
+    nonterminals (sentanaces, paragraphs)
+    always a beginning non-terminal... starting point
+    productions
+
+In BNF - always 1 non terminal on the left
+IE
+<function> ->
+not
+<function>ID<stats> ->
+
+https://en.wikipedia.org/wiki/Turing_machine
+
+programs a program when only tokens
+
+"Program correct with respect to its grammar"
+
+parsar will say if program is ok in terms of syntax
+
+Compilers "peek" into the source so it generates 1 matching program to check syntax
+via Parse/Abstract tree
+
+
