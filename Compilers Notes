@@ -519,7 +519,7 @@ main.c
 |
 |
 | //testscanner()
-|
+| // print token
 
 scanner.c
 -----------
@@ -535,10 +535,18 @@ testScanner.c
 |
 |
 | testscanner() {
-| //loop until EOFtk
+|
 | //scanner()
+| //loop until EOFtk
 | //print Tk (for testing)
 | }
+
+call the scanner, get a token -- only one token.  need to continually call scanner to get all tokens
+
+will use this scanner the later compiler
+tokens will eventually go into a tree
+
+
 
 Scanner Suggesstion
 
@@ -554,6 +562,10 @@ filter: gets data, keeps some, discards some, maybe make small changes
 Filter 1: Take out comments, count lines, map characters to column
 Filter 2: Pass  non-identifers through, compare identifers to list of keywords and
 report keywords if match, otherwise pass idenitifer
+
+3 things come out of filter: characters, column number of table, line number
+
+line number and column number - static global variables
 
 CFGParsing
 static semantics -- BNF cannot express
@@ -579,6 +591,103 @@ programs a program when only tokens
 parsar will say if program is ok in terms of syntax
 
 Compilers "peek" into the source so it generates 1 matching program to check syntax
-via Parse/Abstract tree
+via Parse/Abstract tree.  source tells how many tokens it contains, and what the tokens are
+
+GL built as a tree... the tree seperates the front and back end.  when the tree is built, that
+is the end of the front end
+
+in parsers - nondeterministic/context free grammar is more powerful.
+can't necessarily show same language in deterministic
+
+leftmost/top-down -- bit easier to work with, understand, visualize
+start with root and then build until all leaves are terminal
+
+rightmost/bottom-up - builds from the leaves to the root
+
+Parse Tree/Abstract Syntax Tree
+
+s1              s1
+s2             {s2
+s3              s3}
+s4              s4
+---- can be different programs.    thinking scoping/control statements
+
+            <program>
+        /     |    |   \
+        S1   s2   s3   s4
+
+            <program>
+            /    |    \
+          s1     s2     s3
+                / \
+              s2  s3
+
+ismorphoc equilvants - different trees that have same meaning.. IE adding the { } to the tree
+around s3 and 3 would produce an isomorphic equilvant
+
+building (x+y)/(x-y)
+loooking through entire programing.  compiler can't be expected to always do this
+
+
+E -> E+E | E-E | E *E | E/E | (E)| id
+
+                E
+            /   |  \
+           E    /   E
+          /          \
+        ( E )       ( E )
+          |           |
+        E + E       E - E
+        |   |       |   |
+       idx idy     idx  idy     -> would include line number in our compiler
+                                -> order of x and y important because of communitivity
+program is good per parser      -> in user's program .. the x is left of +/-
+                                -> traverals is left to right for tokens
+
+can drop the  ( ) from the abstract tree
+you are dividing the left branch by the right branch.
+
+
+building
+x+y*z
+
+                E                               E
+             /     \                         /      \
+            E   +   E                       E    *   E
+            |      /|\                    / | \      |
+            idx    E*E                   E  +  E     idz
+                   | |                   |     |
+                 idy  idz               idx   idy
+
+Will get too different answers
+Grammer is ambigous.
+ need to introduce precedence -- introduce levels to the grammar
+solve associtativity - how to tell grammer that you want left or right  -- use recursion
+
+https://en.wikibooks.org/wiki/Introduction_to_Programming_Languages/Precedence_and_Associativity
+
+left associativity = left recursion
+right associativity = roght recursion
+
+y = 3
+x = y = 5
+print(x)
+x is printed because assignment is right associativie.
+
+if this was left associative then answer would be 3
+
+The is recursive.. No way to generate a + from T
+Levels
+E-> E + T | E - T | T                            x - y + z
+T-> F * T | T/F | F
+F -> (E) | id
+
+                E                                E
+             /  |  \                         /   |  \
+            E   +   T                       E   -    T
+         /  | \                                      no way to get + from T
+        E  -  T                                     except if there was  () in original program
+
+
 
 
