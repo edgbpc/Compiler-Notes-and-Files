@@ -556,6 +556,9 @@ file.sp19 -------> SCANNER  -------> Token
 
 file.sp19 ->  FILTER 1 --> SCANNER FA  -> FILTER 2 ----> Token
 
+scanner can read just 1 character (or a line)
+scanner needs to know column and new line
+
 helpers:
 
 filter: gets data, keeps some, discards some, maybe make small changes
@@ -566,6 +569,19 @@ report keywords if match, otherwise pass idenitifer
 3 things come out of filter: characters, column number of table, line number
 
 line number and column number - static global variables
+
+filter 1 - getline/getchar
+skip comments (scanf)
+returns characters
+line count incrementer and return line count
+return column number
+
+scanner -
+
+
+
+filter 2 - doesn't have to be own function.  can be part of scanner
+identifer changed to keyword if appropriate
 
 CFGParsing
 static semantics -- BNF cannot express
@@ -690,4 +706,42 @@ F -> (E) | id
 
 
 
+
+top-down , weakest operand on top.. goes down to strongest
+
+evaluate lower on the tree before higher operands
+
+weak
+ |
+ |
+ |
+\|/
+strong
+
+
+uniary operations  .... negation, !
+ex -> p + !x
+
+in C  -- !(!)p double negation
+of an int, turns 0 to 0 and non-zero to 1
+
+
+Parsers
+
+Top-down LL (read left to right, follow leftmost derivation)
+bottom-up LR (ready left to right, follow rightmost derivation)
+
+leftmost - work on left most node
+rightmost - work on right most node
+
+top-down - build tree from node and descend down the laaves
+bottom-up - build tree up from leaves to root
+
+all parsers used stack memory
+
+
+parser may need to ask for more then one token to decide what to do
+
+LL(∞) - parser can get all tokens ahead
+LL(1) - parser gets one token at a time
 
