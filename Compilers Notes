@@ -742,6 +742,148 @@ all parsers used stack memory
 
 parser may need to ask for more then one token to decide what to do
 
+LL(k)
+1st L = read left to right
+2nd L = left most derivation
+k = how many tokens can look ahead (before making a decision)
+
 LL(∞) - parser can get all tokens ahead
 LL(1) - parser gets one token at a time
+
+
+
+Quiz
+
+       L|D
+    <-------
+     |      |
+     |      |
+  L  \/ L|D |
+O--->O------>O
+    odd      even
+
+
+production:
+E->E+T | E-T | T
+T->F*T | T/F | F
+F->(E) | id
+
+Algorithm:
+look at token from program to determine which BNF production is appropriate (may need look ahead)
+change non-terminals to appropriate BNF production
+if scanner has token that matches expected in BNF prodution, then pop the matched items and add to tree
+successful termination of scanner has EOFTk and stack is empty
+
+
+x+y*2 ---> SCANNER ---> IDx to Stack --->
+
+
+
+Stack:      Stack:
+
+
+
+  E          id    (E goes to T goes to id)
+  +          +
+  T          T
+
+id matches BNF.  id poppped and gives next token.
++ matches BNF so popped
+
+Stack:                  Stack:
+
+
+
+
+
+                           *
+  T (goes to F * T)        T
+gave up on these notes
+
+Parser checks if program is correct and builds parse tree
+
+       E
+    /  |  \
+    E  +  T
+    |     |
+    T   / | \
+    |  F  *  T
+    F  |     |
+    | IDy    F
+   IDx       |
+            IDz
+
+
+Problems
+1)can get infinite additions to stack
+
+N -> N⍺  .. N⍺ will constantly be added
+
+how to change to get equilvant BNF?
+
+2) N-> ⍺ | β
+    non-deterministic case
+    check if LL(1) using intersections of first and follow sets (after break)
+    technique to solve - left-factorization
+
+solving 1
+
+A -> A⍺ | Aβ |         γ|δ
+introduce new non-terminal chracter
+
+Example:
+E -> E + T | E - T | T   ---> E + T and E - T are left recursive.  T is not
+T -> F * T | T/F | F
+F-> (E)| id
+
+** take all the non-recursive character and add new non-terminal.
+E -> TX
+X -> ε|+TX|-TX
+
+new BNF  no longer left recursive on E but still on T
+E -> TX
+X -> E|+TX|-TX
+T -> F * T | T/F | F
+F-> (E)| id
+
+
+indirect left recursion
+
+suppose
+
+f() {
+.
+.
+g()
+}
+
+if g() is g() {  f() } then have indirect left recursion
+same as
+E -> N + T
+N -> ;
+not recursion
+
+but if N-> E then have indirect  left recursion
+
+E -> N + T
+N-> ⍺N⍺  /// no because N is not on the left
+
+E -> N + T
+N -> E⍺
+
+replace indirect left recurison with direct then follow same process to eliminate left recurison
+
+WARNING - CHECK FOR INDIRECT  LEFT RECURSION
+
+E -> N + T
+N -> E⍺ | β
+E -> E⍺ + T | β + T
+
+
+
+E -> E⍺ + T | β + T
+simplify .. find common parts
+E ->  (E⍺|β)   + T
+E -> N + T
+N -> ((E⍺|β)
 
