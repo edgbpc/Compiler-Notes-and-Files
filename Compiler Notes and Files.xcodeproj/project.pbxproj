@@ -51,6 +51,15 @@
 		C3D6BFC32240591D00EA6180 /* Eric Goodwin HW2 page1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Eric Goodwin HW2 page1.pdf"; path = "Compiler Notes and Files/HW2/Eric Goodwin HW2 page1.pdf"; sourceTree = SOURCE_ROOT; };
 		C3D6BFC42240591D00EA6180 /* Eric Goodwin HW2 page2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Eric Goodwin HW2 page2.pdf"; path = "Compiler Notes and Files/HW2/Eric Goodwin HW2 page2.pdf"; sourceTree = SOURCE_ROOT; };
 		C3D6BFC52240591D00EA6180 /* lexical.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lexical.jpg; sourceTree = SOURCE_ROOT; };
+		C3D6BFC722405F4500EA6180 /* Q2_sol.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Q2_sol.pdf; sourceTree = "<group>"; };
+		C3D6BFC822405F4500EA6180 /* Q3_sol.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Q3_sol.pdf; sourceTree = "<group>"; };
+		C3D6BFC922405F4500EA6180 /* Q1_sol.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Q1_sol.pdf; sourceTree = "<group>"; };
+		C3D6BFCA22405F4500EA6180 /* H3_sol-1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "H3_sol-1.pdf"; sourceTree = "<group>"; };
+		C3D6BFCB22405F4500EA6180 /* H0_sol-1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "H0_sol-1.pdf"; sourceTree = "<group>"; };
+		C3D6BFCC22405F4500EA6180 /* H2_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = H2_1.jpg; sourceTree = "<group>"; };
+		C3D6BFCD22405F4500EA6180 /* H2_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = H2_3.jpg; sourceTree = "<group>"; };
+		C3D6BFCE22405F4500EA6180 /* H1_sol-1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "H1_sol-1.pdf"; sourceTree = "<group>"; };
+		C3D6BFCF22405F4500EA6180 /* H2_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = H2_2.jpg; sourceTree = "<group>"; };
 		C3E9748D2239CFBD00AEA546 /* CFGParsing.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = CFGParsing.pdf; path = "Compiler Notes and Files/Canvas Notes/CFGParsing.pdf"; sourceTree = SOURCE_ROOT; };
 		C3F047F2221B8B7000B4CAC6 /* LexAnalysis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = LexAnalysis.pdf; path = "Compiler Notes and Files/Canvas Notes/LexAnalysis.pdf"; sourceTree = SOURCE_ROOT; };
 		C3F047F3221B8E4F00B4CAC6 /* CompIntpTrans.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = CompIntpTrans.pdf; path = "Compiler Notes and Files/Canvas Notes/CompIntpTrans.pdf"; sourceTree = SOURCE_ROOT; };
@@ -86,6 +95,7 @@
 		C3BF76532209244800FBF7D5 /* Compiler Notes and Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3D6BFC622405F4500EA6180 /* Answers */,
 				C3D6BFBD2240574700EA6180 /* HW4 */,
 				C3D6BFB62240573900EA6180 /* HW3 */,
 				C3D6BFAA224055F600EA6180 /* HW2 */,
@@ -157,6 +167,22 @@
 				C3D6BFBF2240574700EA6180 /* IMG_0262.jpg */,
 			);
 			path = HW4;
+			sourceTree = "<group>";
+		};
+		C3D6BFC622405F4500EA6180 /* Answers */ = {
+			isa = PBXGroup;
+			children = (
+				C3D6BFC722405F4500EA6180 /* Q2_sol.pdf */,
+				C3D6BFC822405F4500EA6180 /* Q3_sol.pdf */,
+				C3D6BFC922405F4500EA6180 /* Q1_sol.pdf */,
+				C3D6BFCA22405F4500EA6180 /* H3_sol-1.pdf */,
+				C3D6BFCB22405F4500EA6180 /* H0_sol-1.pdf */,
+				C3D6BFCC22405F4500EA6180 /* H2_1.jpg */,
+				C3D6BFCD22405F4500EA6180 /* H2_3.jpg */,
+				C3D6BFCE22405F4500EA6180 /* H1_sol-1.pdf */,
+				C3D6BFCF22405F4500EA6180 /* H2_2.jpg */,
+			);
+			path = Answers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
