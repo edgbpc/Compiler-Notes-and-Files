@@ -40,12 +40,17 @@
 		C3D6BFAB224055F600EA6180 /* HW2 Page1.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HW2 Page1.HEIC"; sourceTree = "<group>"; };
 		C3D6BFAC224055F600EA6180 /* H2 page2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "H2 page2.jpg"; sourceTree = "<group>"; };
 		C3D6BFAE224055F600EA6180 /* Eric Goodwin CS4280 HW1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Eric Goodwin CS4280 HW1.pdf"; sourceTree = "<group>"; };
+		C3D6BFB72240573900EA6180 /* Eric Goodwin HW3 Answer 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Eric Goodwin HW3 Answer 1.jpg"; sourceTree = "<group>"; };
+		C3D6BFB82240573900EA6180 /* Eric Goodwin HW3 Answer 4.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Eric Goodwin HW3 Answer 4.HEIC"; sourceTree = "<group>"; };
+		C3D6BFB92240573900EA6180 /* Eric Goodwin HW3 answers 2 and 3.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Eric Goodwin HW3 answers 2 and 3.HEIC"; sourceTree = "<group>"; };
+		C3D6BFBA2240573900EA6180 /* Eric Goodwin HW3 Answer 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Eric Goodwin HW3 Answer 4.jpg"; sourceTree = "<group>"; };
+		C3D6BFBB2240573900EA6180 /* Eric Goodwin HW3 answers 2 and 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Eric Goodwin HW3 answers 2 and 3.jpg"; sourceTree = "<group>"; };
+		C3D6BFBC2240573900EA6180 /* Eric Goodwin HW3 Answer 1.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Eric Goodwin HW3 Answer 1.HEIC"; sourceTree = "<group>"; };
+		C3D6BFBE2240574700EA6180 /* IMG_0261.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0261.jpg; sourceTree = "<group>"; };
+		C3D6BFBF2240574700EA6180 /* IMG_0262.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0262.jpg; sourceTree = "<group>"; };
 		C3E9748D2239CFBD00AEA546 /* CFGParsing.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = CFGParsing.pdf; path = "Compiler Notes and Files/Canvas Notes/CFGParsing.pdf"; sourceTree = SOURCE_ROOT; };
 		C3F047F2221B8B7000B4CAC6 /* LexAnalysis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = LexAnalysis.pdf; path = "Compiler Notes and Files/Canvas Notes/LexAnalysis.pdf"; sourceTree = SOURCE_ROOT; };
 		C3F047F3221B8E4F00B4CAC6 /* CompIntpTrans.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = CompIntpTrans.pdf; path = "Compiler Notes and Files/Canvas Notes/CompIntpTrans.pdf"; sourceTree = SOURCE_ROOT; };
-		C3F5C3502230A3810061DA08 /* Eric Goodwin HW3 Answer 4.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Eric Goodwin HW3 Answer 4.HEIC"; sourceTree = "<group>"; };
-		C3F5C3512230A3810061DA08 /* Eric Goodwin HW3 answers 2 and 3.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Eric Goodwin HW3 answers 2 and 3.HEIC"; sourceTree = "<group>"; };
-		C3F5C3522230A3810061DA08 /* Eric Goodwin HW3 Answer 1.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Eric Goodwin HW3 Answer 1.HEIC"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,13 +83,13 @@
 		C3BF76532209244800FBF7D5 /* Compiler Notes and Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3D6BFBD2240574700EA6180 /* HW4 */,
+				C3D6BFB62240573900EA6180 /* HW3 */,
 				C3D6BFAD224055F600EA6180 /* HW1 */,
 				C3D6BFAA224055F600EA6180 /* HW2 */,
-				C3D6BFA62240549E00EA6180 /* HW4 */,
 				C3D6BFA52240544800EA6180 /* HW1 */,
 				C3D6BFA42240542B00EA6180 /* HW2 */,
 				C3D6BFA2224053B800EA6180 /* Canvas Notes */,
-				C3F5C34F2230A3810061DA08 /* HW3 */,
 				C34FBC4D221E2E94003A73BD /* bnf.pdf */,
 				C3BF76612209247100FBF7D5 /* Compilers Notes */,
 				C3BF765F2209247100FBF7D5 /* main.cpp */,
@@ -125,13 +130,6 @@
 			path = HW1;
 			sourceTree = "<group>";
 		};
-		C3D6BFA62240549E00EA6180 /* HW4 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HW4;
-			sourceTree = SOURCE_ROOT;
-		};
 		C3D6BFAA224055F600EA6180 /* HW2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,15 +147,27 @@
 			path = HW1;
 			sourceTree = "<group>";
 		};
-		C3F5C34F2230A3810061DA08 /* HW3 */ = {
+		C3D6BFB62240573900EA6180 /* HW3 */ = {
 			isa = PBXGroup;
 			children = (
-				C3F5C3502230A3810061DA08 /* Eric Goodwin HW3 Answer 4.HEIC */,
-				C3F5C3512230A3810061DA08 /* Eric Goodwin HW3 answers 2 and 3.HEIC */,
-				C3F5C3522230A3810061DA08 /* Eric Goodwin HW3 Answer 1.HEIC */,
+				C3D6BFB72240573900EA6180 /* Eric Goodwin HW3 Answer 1.jpg */,
+				C3D6BFB82240573900EA6180 /* Eric Goodwin HW3 Answer 4.HEIC */,
+				C3D6BFB92240573900EA6180 /* Eric Goodwin HW3 answers 2 and 3.HEIC */,
+				C3D6BFBA2240573900EA6180 /* Eric Goodwin HW3 Answer 4.jpg */,
+				C3D6BFBB2240573900EA6180 /* Eric Goodwin HW3 answers 2 and 3.jpg */,
+				C3D6BFBC2240573900EA6180 /* Eric Goodwin HW3 Answer 1.HEIC */,
 			);
 			path = HW3;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
+		};
+		C3D6BFBD2240574700EA6180 /* HW4 */ = {
+			isa = PBXGroup;
+			children = (
+				C3D6BFBE2240574700EA6180 /* IMG_0261.jpg */,
+				C3D6BFBF2240574700EA6180 /* IMG_0262.jpg */,
+			);
+			path = HW4;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
