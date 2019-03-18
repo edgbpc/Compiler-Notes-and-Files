@@ -25,8 +25,6 @@
 
 /* Begin PBXFileReference section */
 		C34FBC4D221E2E94003A73BD /* bnf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = bnf.pdf; sourceTree = "<group>"; };
-		C34FBC4E221E3D52003A73BD /* HW2 Page1.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; name = "HW2 Page1.HEIC"; path = "Compiler Notes and Files/HW2/HW2 Page1.HEIC"; sourceTree = SOURCE_ROOT; };
-		C34FBC4F221E3D52003A73BD /* H2 page2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "H2 page2.jpg"; path = "Compiler Notes and Files/HW2/H2 page2.jpg"; sourceTree = SOURCE_ROOT; };
 		C3BF76512209244800FBF7D5 /* Compiler Notes and Files */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Compiler Notes and Files"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BF76542209244800FBF7D5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C3BF765B2209247100FBF7D5 /* P0 notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "P0 notes.md"; sourceTree = SOURCE_ROOT; };
@@ -39,7 +37,6 @@
 		C3D6BFA32240541400EA6180 /* TopDownParsing.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TopDownParsing.pdf; sourceTree = "<group>"; };
 		C3D6BFAB224055F600EA6180 /* HW2 Page1.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HW2 Page1.HEIC"; sourceTree = "<group>"; };
 		C3D6BFAC224055F600EA6180 /* H2 page2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "H2 page2.jpg"; sourceTree = "<group>"; };
-		C3D6BFAE224055F600EA6180 /* Eric Goodwin CS4280 HW1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Eric Goodwin CS4280 HW1.pdf"; sourceTree = "<group>"; };
 		C3D6BFB72240573900EA6180 /* Eric Goodwin HW3 Answer 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Eric Goodwin HW3 Answer 1.jpg"; sourceTree = "<group>"; };
 		C3D6BFB82240573900EA6180 /* Eric Goodwin HW3 Answer 4.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Eric Goodwin HW3 Answer 4.HEIC"; sourceTree = "<group>"; };
 		C3D6BFB92240573900EA6180 /* Eric Goodwin HW3 answers 2 and 3.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Eric Goodwin HW3 answers 2 and 3.HEIC"; sourceTree = "<group>"; };
@@ -85,10 +82,8 @@
 			children = (
 				C3D6BFBD2240574700EA6180 /* HW4 */,
 				C3D6BFB62240573900EA6180 /* HW3 */,
-				C3D6BFAD224055F600EA6180 /* HW1 */,
 				C3D6BFAA224055F600EA6180 /* HW2 */,
 				C3D6BFA52240544800EA6180 /* HW1 */,
-				C3D6BFA42240542B00EA6180 /* HW2 */,
 				C3D6BFA2224053B800EA6180 /* Canvas Notes */,
 				C34FBC4D221E2E94003A73BD /* bnf.pdf */,
 				C3BF76612209247100FBF7D5 /* Compilers Notes */,
@@ -113,15 +108,6 @@
 			path = "Canvas Notes";
 			sourceTree = "<group>";
 		};
-		C3D6BFA42240542B00EA6180 /* HW2 */ = {
-			isa = PBXGroup;
-			children = (
-				C34FBC4E221E3D52003A73BD /* HW2 Page1.HEIC */,
-				C34FBC4F221E3D52003A73BD /* H2 page2.jpg */,
-			);
-			path = HW2;
-			sourceTree = "<group>";
-		};
 		C3D6BFA52240544800EA6180 /* HW1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,14 +123,6 @@
 				C3D6BFAC224055F600EA6180 /* H2 page2.jpg */,
 			);
 			path = HW2;
-			sourceTree = "<group>";
-		};
-		C3D6BFAD224055F600EA6180 /* HW1 */ = {
-			isa = PBXGroup;
-			children = (
-				C3D6BFAE224055F600EA6180 /* Eric Goodwin CS4280 HW1.pdf */,
-			);
-			path = HW1;
 			sourceTree = "<group>";
 		};
 		C3D6BFB62240573900EA6180 /* HW3 */ = {
