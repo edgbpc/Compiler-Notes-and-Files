@@ -34,6 +34,9 @@
 		C3BF765F2209247100FBF7D5 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
 		C3BF76602209247100FBF7D5 /* ProgArch.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ProgArch.pdf; path = "Compiler Notes and Files/Canvas Notes/ProgArch.pdf"; sourceTree = SOURCE_ROOT; };
 		C3BF76612209247100FBF7D5 /* Compilers Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Compilers Notes"; sourceTree = SOURCE_ROOT; };
+		C3D350E922406764005A68DA /* Test 1 review */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Test 1 review"; sourceTree = "<group>"; };
+		C3D350EA22407508005A68DA /* H4_sol.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = H4_sol.pdf; sourceTree = "<group>"; };
+		C3D350EB22407508005A68DA /* H5_sol.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = H5_sol.pdf; sourceTree = "<group>"; };
 		C3D6BFA32240541400EA6180 /* TopDownParsing.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TopDownParsing.pdf; sourceTree = "<group>"; };
 		C3D6BFAB224055F600EA6180 /* HW2 Page1.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HW2 Page1.HEIC"; sourceTree = "<group>"; };
 		C3D6BFAC224055F600EA6180 /* H2 page2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "H2 page2.jpg"; sourceTree = "<group>"; };
@@ -109,6 +112,7 @@
 				C3BF765F2209247100FBF7D5 /* main.cpp */,
 				C3BF765B2209247100FBF7D5 /* P0 notes.md */,
 				C3BF76542209244800FBF7D5 /* main.cpp */,
+				C3D350E922406764005A68DA /* Test 1 review */,
 			);
 			path = "Compiler Notes and Files";
 			sourceTree = "<group>";
@@ -172,6 +176,8 @@
 		C3D6BFC622405F4500EA6180 /* Answers */ = {
 			isa = PBXGroup;
 			children = (
+				C3D350EA22407508005A68DA /* H4_sol.pdf */,
+				C3D350EB22407508005A68DA /* H5_sol.pdf */,
 				C3D6BFC722405F4500EA6180 /* Q2_sol.pdf */,
 				C3D6BFC822405F4500EA6180 /* Q3_sol.pdf */,
 				C3D6BFC922405F4500EA6180 /* Q1_sol.pdf */,
