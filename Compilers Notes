@@ -36,7 +36,8 @@ headers - information provided "what is exported".  information about the functi
 seperate source files always compiled one at a time
 
 source -> preprocessor (everything with # processed (ex - #include stdio.h, macros) 
-telling compiler that using elements (information from the library) from stdio not the actual library; library linked later
+telling compiler that using elements (information from the library) from stdio not the actual library;
+library linked later
 
 on delmar 
 
@@ -44,10 +45,12 @@ gcc -E *.c > y.i will produce the preprocessor file and redirect to file
 
 ... = variable number of parameters
 
-compiler uses the .i file - - on delmar, .i not created as a file unless specified by -E, otherwise, gcc will continue to compile
+compiler uses the .i file - - on delmar, .i not created as a file unless specified by -E, otherwise, gcc
+will continue to compile
 
 
-Linker - connects multiple compiled files into a single executable.  Ex - connects printf in source to the implementation in the library (external linkage)
+Linker - connects multiple compiled files into a single executable.  Ex - connects printf in source to the
+implementation in the library (external linkage)
 
 most errors come from the compiler - syntax, undefined variables
 : undefined reference to 'printff'
@@ -56,7 +59,8 @@ Linker error - collect2: error: ld returned 1 exit status (ld is linker error)
 if no main - shell cannot start the program.  cannot call main as a function
 
 internal linkage - idea to prevent linker from connecting header info to other modules 
-	a helper function defined in source but not in the header, is hidden from the linker and only available to that source in which it was defined
+a helper function defined in source but not in the header, is hidden from the linker and only available
+to that source in which it was defined
 
 define the helper with static inside the source that needs to use the helper.  
 
@@ -111,7 +115,8 @@ Adam ala ada Jim ala Susan George Georg john
 2				6: George
 
 
-Print preorder traversal - visit node, process node before traveling left, then down (if nothing left or right returns up a node and checks right)
+Print preorder traversal - visit node, process node before traveling left, then down (if nothing left
+or right returns up a node and checks right)
 4 Adam John				4 - root
  3 Ala Ada Jim				3 - child of root, has no children
  5 Susan Georg				5 - child of root, has a child 6
@@ -228,8 +233,10 @@ terimanal: upper case or use < >
 
 BNF is a set of productions
 <program> -> program being <variables> <statements> end
-<variables> -> var id; <variables> | e  // <variables> is recursion.  recursion requires a base (e)) e = empty
-<statements> -> <stat>;{<stat>;} //must have at least 1 statement and then repeats any number of times, incuding 0
+<variables> -> var id; <variables> | e  // <variables> is recursion.
+recursion requires a base (e)) e = empty
+<statements> -> <stat>;{<stat>;} //must have at least 1 statement and then repeats any number of
+times, incuding 0
 ...
 <ifStat>-> if <cond><state>{else <stat>}
  this does not say what program does, only says what is possible
@@ -291,7 +298,8 @@ infinite # of strings possible
 
 inteperters -
 
-allows programs to be built in languages other then the machine language of the computer that is building the program
+allows programs to be built in languages other then the machine language of the computer that
+is building the program
 
 interperters leads to abstract machines
 run without compliation
@@ -339,7 +347,8 @@ Lexical Analysis (scanner) -> takes characters and turns into tokens
 
 Σ^chars -> Σ^tokens
 
-significant digits -- scanners used to cut off after set number of characters in a identifier declaration
+significant digits -- scanners used to cut off after set number of characters in a identifier
+declaration
 IE DOS - 6 characters where considered significant.  distanc == distance
 
 token include line number
